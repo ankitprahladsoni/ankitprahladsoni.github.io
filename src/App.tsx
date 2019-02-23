@@ -1,66 +1,12 @@
 import * as React from 'react';
 import './App.css';
+import { NavBar } from './navbar/NavBar';
 
 class App extends React.Component {
   public render() {
     return (
       <>
-        <nav
-          className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-          id="sideNav"
-        >
-          <a className="navbar-brand js-scroll-trigger" href="#page-top">
-            <span className="d-block d-lg-none" />
-            <span className="d-none d-lg-block">
-              <img
-                className="img-fluid img-profile rounded-circle mx-auto mb-2"
-                src="https://media.licdn.com/dms/image/C4E03AQGrUdDdpJnkvQ/profile-displayphoto-shrink_200_200/0?e=1539216000&v=beta&t=n4QKzA7xP6A25I_SYd2VAf_jQQMT6YXPEJ-pu87fruE"
-                alt=""
-              />
-            </span>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#skills">
-                  Skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#experience">
-                  Experience
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#projects">
-                  Personal Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#education">
-                  Education
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
+        <NavBar />
         <div className="container-fluid p-0">
           <section
             className="resume-section p-3 p-lg-5 d-flex d-column"
@@ -84,7 +30,7 @@ class App extends React.Component {
                 Spring. Introduced and implemented new frontend framework to
                 improve team’s productivity. Build up better coding practices
                 within the team. <br />A passionate mentor and an eager team
-                player. Test
+                player.
               </p>
               <ul className="list-inline list-social-icons mb-0">
                 <li className="list-inline-item">
