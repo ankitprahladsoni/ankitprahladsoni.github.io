@@ -1,12 +1,10 @@
 export default [
-  {
-    name: 'Java',
-    class: 'devicon-java-plain',
-  },
+  { class: 'devicon-java-plain', name: 'Java' },
   { class: 'devicon-javascript-plain', name: 'Javascript' },
   { class: 'devicon-gradle-plain', name: 'Gradle' },
   { class: 'devicon-tomcat-line', name: 'Tomcat' },
   { class: 'devicon-typescript-plain', name: 'Typescript' },
+  { class: 'devicon-react-original', name: 'React' },
   { class: 'devicon-vuejs-plain', name: 'Vue' },
   { class: 'devicon-angularjs-plain', name: 'Angular' },
   { class: 'devicon-css3-plain', name: 'CSS 3' },

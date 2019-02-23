@@ -110,6 +110,10 @@ section.resume-section {
   padding-bottom: 5rem !important;
 }
 
+.resume-date{
+  padding-left: 1em;
+}
+
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -161,4 +165,6 @@ a:active {
 
 .img-span {
   display: inline-block;
+  padding-right: 0.5em;
+  text-align: center;
 }

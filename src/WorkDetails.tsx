@@ -6,6 +6,7 @@ interface WorkDetailsProps {
   company?: string;
   date?: string;
   work: string[];
+  link?: string;
 }
 
 export function WorkDetails(props: WorkDetailsProps) {
@@ -21,6 +22,7 @@ export function WorkDetails(props: WorkDetailsProps) {
         )}
 
         <WorkPoints work={props.work} />
+        {props.link && <a href={props.link}>Link to project</a>}
       </div>
     </div>
   );
