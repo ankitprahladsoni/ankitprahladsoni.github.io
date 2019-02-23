@@ -1,3 +1,4 @@
+import { Projects } from './projects/Projects';
 import { Experience } from './experience/Experience';
 import { Skills } from './skills/Skills';
 import { About } from './about/About';
@@ -14,32 +15,7 @@ class App extends React.Component {
           <About />
           <Skills />
           <Experience />
-          <section
-            className="resume-section p-3 p-lg-5 d-flex flex-column"
-            id="projects"
-          >
-            <div className="my-auto">
-              <h2 className="mb-5">Personal Projects</h2>
-              <div className="resume-item d-flex flex-column flex-md-row mb-5">
-                <div className="resume-content mr-auto">
-                  <h3 className="mb-0">Technical Blog</h3>
-
-                  <ul>
-                    <li>Created a blogpost using Vuejs and Bulma. </li>
-                    <li>                     
-                      Aimed at providing easy explanation of various design
-                      patterns.
-                    </li>
-                    <li>
-                      Link:
-                      https://ankitprahladsoni.github.io/blog-post/#/design-patterns/strategy{' '}
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-
+          <Projects />
           <section
             className="resume-section p-3 p-lg-5 d-flex flex-column"
             id="education"
