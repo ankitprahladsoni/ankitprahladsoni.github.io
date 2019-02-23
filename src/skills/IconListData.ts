@@ -1,0 +1,23 @@
+export default [
+  {
+    name: 'Java',
+    class: 'devicon-java-plain',
+  },
+  { class: 'devicon-javascript-plain', name: 'Javascript' },
+  { class: 'devicon-gradle-plain', name: 'Gradle' },
+  { class: 'devicon-tomcat-line', name: 'Tomcat' },
+  { class: 'devicon-typescript-plain', name: 'Typescript' },
+  { class: 'devicon-vuejs-plain', name: 'Vue' },
+  { class: 'devicon-angularjs-plain', name: 'Angular' },
+  { class: 'devicon-css3-plain', name: 'CSS 3' },
+  { class: 'devicon-git-plain', name: 'GIT' },
+  { class: 'devicon-html5-plain', name: 'HTML 5' },
+  { class: 'devicon-mysql-plain', name: 'MySQL' },
+  { class: 'devicon-oracle-original', name: 'Oracle' },
+  { class: 'devicon-webpack-plain', name: 'Webpack' },
+  { class: 'devicon-bootstrap-plain', name: 'Bootstrap' },
+  { class: 'devicon-visualstudio-plain', name: 'VS Code' },
+  { class: 'devicon-intellij-plain', name: 'Intellij' },
+  { class: 'devicon-sass-original', name: 'SASS' },
+  { class: 'devicon-d3js-plain', name: 'D3' },
+];
