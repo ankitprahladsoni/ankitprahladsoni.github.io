@@ -1,14 +1,14 @@
 import React from 'react';
 import { WorkPoints } from './WorkPoints';
 
-interface CompanyDetailsProps {
+interface WorkDetailsProps {
   title: string;
-  company: string;
-  date: string;
+  company?: string;
+  date?: string;
   work: string[];
 }
 
-export function CompanyDetails(props: CompanyDetailsProps) {
+export function WorkDetails(props: WorkDetailsProps) {
   return (
     <div className="resume-item d-flex flex-column flex-md-row mb-5">
       <div className="resume-content mr-auto">

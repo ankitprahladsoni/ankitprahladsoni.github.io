@@ -1,12 +1,10 @@
 import React from 'react';
 import { Section } from '../Section';
 import ExperienceData from './ExperienceData';
-import { CompanyDetails } from './CompanyDetails';
+import { WorkDetails } from '../WorkDetails';
 
 export function Experience({}) {
-  const list = ExperienceData.map(e => (
-    <CompanyDetails {...e} key={e.company} />
-  ));
+  const list = ExperienceData.map(e => <WorkDetails {...e} key={e.company} />);
 
   return (
     <Section id="experience" title="Experience">
@@ -14,5 +12,3 @@ export function Experience({}) {
     </Section>
   );
 }
-
-

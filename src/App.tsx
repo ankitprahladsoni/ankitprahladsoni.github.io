@@ -26,8 +26,7 @@ class App extends React.Component {
 
                   <ul>
                     <li>Created a blogpost using Vuejs and Bulma. </li>
-                    <li>
-                      {' '}
+                    <li>                     
                       Aimed at providing easy explanation of various design
                       patterns.
                     </li>
