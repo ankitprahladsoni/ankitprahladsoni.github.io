@@ -1,3 +1,4 @@
+import { About } from './about/About';
 import * as React from 'react';
 import './App.css';
 import { NavBar } from './navbar/NavBar';
@@ -8,59 +9,7 @@ class App extends React.Component {
       <>
         <NavBar />
         <div className="container-fluid p-0">
-          <section
-            className="resume-section p-3 p-lg-5 d-flex d-column"
-            id="about"
-          >
-            <div className="my-auto">
-              <h1 className="mb-0">
-                Ankit
-                <span className="text-primary">Soni</span>
-              </h1>
-              <div className="subheading mb-5">
-                <a href="mailto:ankitprahladsoni@gmail.com">
-                  ankitprahladsoni@gmail.com
-                </a>{' '}
-                · (352) 745-9208
-              </div>
-              <p className="mb-5">
-                Graduate student at University of Florida. Formerly full stack
-                senior software developer with 6 years’ experience developing
-                applications for Insurance and Banking domain using Java and
-                Spring. Introduced and implemented new frontend framework to
-                improve team’s productivity. Build up better coding practices
-                within the team. <br />A passionate mentor and an eager team
-                player.
-              </p>
-              <ul className="list-inline list-social-icons mb-0">
-                <li className="list-inline-item">
-                  <a href="https://www.linkedin.com/in/ankit-soni-06147280">
-                    <span className="fa-stack fa-lg">
-                      <i className="fa fa-circle fa-stack-2x" />
-                      <i className="fa fa-linkedin fa-stack-1x fa-inverse" />
-                    </span>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="https://github.com/ankitprahladsoni">
-                    <span className="fa-stack fa-lg">
-                      <i className="fa fa-circle fa-stack-2x" />
-                      <i className="fa fa-github fa-stack-1x fa-inverse" />
-                    </span>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="https://stackoverflow.com/users/1510909/ankit-soni">
-                    <span className="fa-stack fa-lg">
-                      <i className="fa fa-circle fa-stack-2x" />
-                      <i className="fa fa-stack-overflow fa-stack-1x fa-inverse" />
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </section>
-
+          <About />
           <section
             className="resume-section p-3 p-lg-5 d-flex flex-column"
             id="skills"
