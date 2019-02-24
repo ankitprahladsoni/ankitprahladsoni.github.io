@@ -1,7 +1,8 @@
 import React from 'react';
 import { Section } from '../Section';
-import { IconsList } from './IconsList';
+import IconsList from './IconsList';
 import { CheckList } from './CheckList';
+
 export function Skills({}) {
   return (
     <Section title="Skills" id="skills">
