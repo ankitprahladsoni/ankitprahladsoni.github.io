@@ -22,7 +22,7 @@ export function MenuItem(props: MenuItemProps) {
     <li
       className="nav-item"
       data-toggle="collapse"
-      data-target=".navbar-collapse"
+      data-target=".navbar-collapse.show"
     >
       <a href={props.href} className="nav-link js-scroll-trigger">
         {props.name}
