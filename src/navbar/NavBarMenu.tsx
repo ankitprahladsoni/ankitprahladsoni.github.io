@@ -5,7 +5,9 @@ export function NavBarMenu({}) {
   const list = Menu.map(m => <MenuItem {...m} key={m.name} />);
   return (
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav">{list}</ul>
+      <ul className="nav navbar-nav" id="test">
+        {list}
+      </ul>
     </div>
   );
 }
@@ -17,8 +19,12 @@ interface MenuItemProps {
 
 export function MenuItem(props: MenuItemProps) {
   return (
-    <li className="nav-item">
-      <a className="nav-link js-scroll-trigger" href={props.href}>
+    <li
+      className="nav-item"
+      data-toggle="collapse"
+      data-target=".navbar-collapse"
+    >
+      <a href={props.href} className="nav-link js-scroll-trigger">
         {props.name}
       </a>
     </li>
