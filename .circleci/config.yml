@@ -22,6 +22,7 @@ jobs: # a collection of steps
             - ~/.cache/yarn
 deployment:
   production:
+    branch: develop
     commands:
       - git config --global -l
       - git config --global user.email circleci@circleci
