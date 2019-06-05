@@ -20,6 +20,10 @@ jobs: # a collection of steps
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      - run: # run tests
-          name: deploy
-          command: yarn deploy
+deployment:
+  production:
+    commands:
+      - git config --global -l
+      - git config --global user.email circleci@circleci
+      - git config --global user.name CircleCI
+      - yarn deploy
