@@ -15,16 +15,11 @@ jobs: # a collection of steps
       - run:
           name: Install Dependencies
           command: yarn install --frozen-lockfile
+      - run:
+          name: Deploy
+          command: git config --global -l && git config --global user.email circleci@circleci && git config --global user.name CircleCI && yarn deploy
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-deployment:
-  production:
-    branch: develop
-    commands:
-      - git config --global -l
-      - git config --global user.email circleci@circleci
-      - git config --global user.name CircleCI
-      - yarn deploy
